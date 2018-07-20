@@ -1,6 +1,7 @@
 FROM openjdk:8
 
-ENV SONAR_VERSION=5.6.7 \
+ARG SONAR_VERSION=5.6.7
+ENV SONAR_VERSION=$SONAR_VERSION \
     SONARQUBE_HOME=/opt/sonarqube \
     # Database configuration
     # Defaults to using H2
